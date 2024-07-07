@@ -4,6 +4,7 @@ import searchIcon from "../../assets/MagnifyingGlass.svg";
 import shoppingIcon from "../../assets/ShoppingCartSimple.svg";
 import heartIcon from "../../assets/Heart.svg";
 import profileIcon from "../../assets/profile.svg";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -27,7 +28,9 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex items-center gap-[20px]">
-        <img src={shoppingIcon} alt={shoppingIcon} />
+        <NavLink to="/cart">
+          <img src={shoppingIcon} alt={shoppingIcon} />
+        </NavLink>
         <img src={heartIcon} alt={heartIcon} />
         <img src={profileIcon} alt={profileIcon} />
       </div>

@@ -26,6 +26,7 @@ import creditIcon from "../assets/CreditCard.svg";
 import headSetIcon from "../assets/Headphones.svg";
 import scissorsIcon from "../assets/scissors.svg";
 import bandIcon from "../assets/bandaid.svg";
+import { NavLink } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -40,9 +41,11 @@ const LandingPage = () => {
             <h1 className="font-[700] text-[56px] leading-[76.27px]">
               Get access to the best healthcare products with just a few clicks
             </h1>
-            <button className="text-[#FFFFFF] font-[700] text-[30px] leading-[49.03px] bg-[#37474F] rounded-[20px] w-[200px] h-[60px]">
-              SHOP NOW
-            </button>
+            <NavLink to="/product">
+              <button className="text-[#FFFFFF] font-[700] text-[30px] leading-[49.03px] bg-[#37474F] rounded-[20px] w-[200px] h-[60px]">
+                SHOP NOW
+              </button>
+            </NavLink>
           </div>
           <div className="flex justify-end">
             <img src={scissorsIcon} alt={scissorsIcon} />
