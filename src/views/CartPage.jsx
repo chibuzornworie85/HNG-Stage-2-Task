@@ -18,7 +18,7 @@ const CartPage = () => {
       <NavBar />
       <div
         style={{ fontFamily: "Public Sans" }}
-        className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10 px-[9rem]"
+        className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10 lg:px-[9rem] px-[15px]"
       >
         <div className="flex items-center gap-2 font-[500] text-[14px] leading-[20px]">
           <img src={houseIcon} alt={houseIcon} />
@@ -30,33 +30,35 @@ const CartPage = () => {
 
       <div
         style={{ fontFamily: "Public Sans" }}
-        className="px-[9rem] h-[800px] py-[80px] flex justify-between gap-12"
+        className="lg:px-[9rem] px-[15px] lg:h-[800px] py-[40px] lg:py-[80px] flex flex-col lg:flex-row justify-between gap-12"
       >
-        <div className="h-[350px] w-[650px] bg-[#FFFFFF] border border-[#E4E7E9] rounded-[4px]">
-          <div className="h-[64px] py-[20px] px-[24px] text-[#191C1F] leading-[24px] font-[500] text-[18px]">
+        <div className="lg:h-[350px] lg:w-[650px] w-[100%] bg-[#FFFFFF] border border-[#E4E7E9] rounded-[4px]">
+          <div className="lg:h-[64px] py-[10px] lg:py-[20px] px-[10px] lg:px-[24px] text-[#191C1F] leading-[24px] font-[500] text-[18px]">
             <h1>Shopping Cart</h1>
           </div>
-          <div className="bg-[#F2F4F5] border py-[10px] px-[24px] text-[#475156] font-[500] text-[12px] leading-[18px] flex justify-between">
+          <div className="bg-[#F2F4F5] border py-[10px] px-[10px] lg:px-[24px] text-[#475156] font-[500] text-[12px] leading-[18px] flex justify-between">
             <p>Products</p>
-            <div className="flex items-center gap-[85px]">
+            <div className="flex items-center gap-8 lg:gap-[85px]">
               <p>Price</p>
               <p>Quantity</p>
               <p>Sub-Total</p>
             </div>
           </div>
-          <div className="h-[72px] flex items-center justify-between p-[15px]">
-            <div className="flex items-center gap-2 text-[14px] leading-[20px] font-[400] text-[#191C1F]">
-              <img src={xIcon} alt={xIcon} className="" />
-              <img
-                src={chipIcon}
-                alt={chipIcon}
-                className="h-[50px] w-[50px]"
-              />
+          <div className="lg:h-[72px] h-[100px] flex items-center justify-between lg:p-[15px]">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-2 text-[12px] lg:text-[14px] leading-[20px] font-[400] text-[#191C1F]">
+              <div className="flex">
+                <img src={xIcon} alt={xIcon} className="" />
+                <img
+                  src={chipIcon}
+                  alt={chipIcon}
+                  className="h-[50px] w-[50px]"
+                />
+              </div>
               <p>Bandages for babies</p>
             </div>
-            <div className="flex gap-[70px] text-[#475156] font-[400] leading-[20px] text-[14px]">
+            <div className="flex gap-4 pr-5 lg:pr-0 lg:gap-[70px] text-[#475156] font-[400] leading-[20px] text-[14px]">
               <p>#3000</p>
-              <div className="h-[48px flex items-center px-[6px] gap-6 bg-[#FFFFFF] border border-[#E4E7E9]">
+              <div className="flex items-center px-[6px] gap-3 lg:gap-6 bg-[#FFFFFF] border border-[#E4E7E9]">
                 <p>-</p>
                 <p>01</p>
                 <p>+</p>
@@ -64,28 +66,30 @@ const CartPage = () => {
               <p className="text-[#191C1F] font-[500]">#3000</p>
             </div>
           </div>
-          <div className="h-[72px] flex items-center justify-between p-[15px]">
-            <div className="flex items-center gap-2 text-[14px] leading-[20px] font-[400] text-[#191C1F]">
-              <img src={xIcontwo} alt={xIcontwo} className="" />
-              <img
-                src={chipIcontwo}
-                alt={chipIcontwo}
-                className="h-[50px] w-[50px]"
-              />
-              <p>Compression Bandages</p>
+          <div className="lg:h-[72px] h-[100px] flex items-center justify-between lg:p-[15px]">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-2 text-[12px] lg:text-[14px] leading-[20px] font-[400] text-[#191C1F]">
+              <div className="flex">
+                <img src={xIcontwo} alt={xIcontwo} className="" />
+                <img
+                  src={chipIcontwo}
+                  alt={chipIcontwo}
+                  className="h-[50px] w-[50px]"
+                />
+              </div>
+              <p>Bandages for babies</p>
             </div>
-            <div className="flex gap-[70px] text-[#475156] font-[400] leading-[20px] text-[14px]">
+            <div className="flex gap-4 pr-5 lg:pr-0 lg:gap-[70px] text-[#475156] font-[400] leading-[20px] text-[14px]">
               <p>#4000</p>
-              <div className="h-[48px flex items-center px-[6px] gap-6 bg-[#FFFFFF] border border-[#E4E7E9]">
-                <p>-</p>
+              <div className="flex items-center px-[6px] gap-3 lg:gap-6 bg-[#FFFFFF] border border-[#E4E7E9]">
+              <p>-</p>
                 <p>03</p>
                 <p>+</p>
               </div>
-              <p className="text-[#191C1F] font-[500]">#1200</p>
+              <p className="text-[#191C1F] font-[500]">#12000</p>
             </div>
           </div>
 
-          <div className="flex justify-end p-[24px] border-t border-[#E4E7E9]">
+          <div className="flex justify-end lg:p-[24px] p-[15px] border-t border-[#E4E7E9]">
             <NavLink to="/product">
               <button className="border-[2px] rounded-[2px] border-[#69F0AE] flex items-center gap-2 px-[24px] h-[48px] text-[#69F0AE] font-[700] text-[14px] leading-[48px]">
                 <img src={leftArrow} alt={leftArrow} />

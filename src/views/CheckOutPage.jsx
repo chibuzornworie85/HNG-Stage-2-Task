@@ -20,7 +20,7 @@ const CheckOutPage = () => {
       <NavBar />
       <div
         style={{ fontFamily: "Public Sans" }}
-        className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10 px-[9rem]"
+        className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10 lg:px-[9rem] px-[15px]"
       >
         <div className="flex items-center gap-2 font-[500] text-[14px] leading-[20px]">
           <img src={houseIcon} alt={houseIcon} />
@@ -34,9 +34,9 @@ const CheckOutPage = () => {
 
       <div
         style={{ fontFamily: "Public Sans" }}
-        className="h-[1327px] flex justify-between gap-10 px-[9rem] py-[60px]"
+        className="lg:h-[1327px] h-[100%] flex flex-col lg:flex-row justify-between gap-10 px-[15px] lg:px-[9rem] py-[30px] lg:py-[60px]"
       >
-        <div className="w-[60%]">
+        <div className="lg:w-[60%] w-[100%]">
           <h1 className="pb-[20px] text-[#191C1F] font-[500] leading-[24px] text-[18px]">
             Billing Information
           </h1>
@@ -45,13 +45,13 @@ const CheckOutPage = () => {
               <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                 User name
               </p>
-              <div className="flex gap-3">
+              <div className="flex flex-col lg:flex-row gap-3 w-[100%]">
                 <input
-                  className="w-[50%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]"
+                  className="lg:w-[50%] w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]"
                   placeholder="First name"
                 />
                 <input
-                  className="w-[50%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]"
+                  className="lg:w-[50%] w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]"
                   placeholder="Last name"
                 />
               </div>
@@ -60,10 +60,10 @@ const CheckOutPage = () => {
               <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                 Address
               </p>
-              <input className="outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px] w-[100%]" />
+              <input className="outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px] w-[100%]" placeholder="Address" />
             </div>
             <div className="flex justify-between gap-3 w-[100%]">
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Region/State
                 </p>
@@ -79,7 +79,7 @@ const CheckOutPage = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   City
                 </p>
@@ -95,7 +95,7 @@ const CheckOutPage = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Zip Code
                 </p>
@@ -103,13 +103,13 @@ const CheckOutPage = () => {
               </div>
             </div>
             <div className="w-[100%] flex gap-2">
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Email
                 </p>
                 <input className="w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]" />
               </div>
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Phone Number
                 </p>
@@ -176,26 +176,26 @@ const CheckOutPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Name on Card
                 </p>
                 <input className="w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]" />
               </div>
-              <div className="flex flex-col gap-3 w-[100%]">
+              <div className="flex flex-col w-[100%]">
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Card Number
                 </p>
                 <input className="w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]" />
               </div>
               <div className="flex gap-2">
-                <div className="flex flex-col gap-3 w-[100%]">
+                <div className="flex flex-col w-[100%]">
                   <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                     Expire Date
                   </p>
                   <input className="w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]" />
                 </div>
-                <div className="flex flex-col gap-3 w-[100%]">
+                <div className="flex flex-col w-[100%]">
                   <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                     CVC
                   </p>
@@ -220,8 +220,8 @@ const CheckOutPage = () => {
             </div>
           </form>
         </div>
-        <div className="w-[40%]">
-          <div className="bg-[#FFFFFF] h-[512px w-[424px] border border-[#E4E7E9] rounded-[4px] p-[20px] flex flex-col gap-4">
+        <div className="lg:w-[40%] w-[100%]">
+          <div className="bg-[#FFFFFF] w-[100%] lg:w-[424px] border border-[#E4E7E9] rounded-[4px] p-[20px] flex flex-col gap-4">
             <h1 className="text-[#1D1D1D] font-[500] leading-[24px] text-[18px]">
               Order Summary
             </h1>

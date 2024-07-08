@@ -22,13 +22,13 @@ const ProductPage = () => {
   return (
     <div>
       <NavBar />
-      <div className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10"></div>
+      <div className="bg-[rgb(249,250,250)] py-[20px] hidden lg:block sticky top-[90px] z-10"></div>
 
       <div
         style={{ fontFamily: "Public Sans" }}
-        className="h-[1020px] px-[5rem] flex gap-6 py-[40px]"
+        className="lg:h-[1020px] h-[100%] px-[15px] lg:px-[5rem] flex gap-6 py-[40px]"
       >
-        <div className="flex flex-col gap-3 w-[20%]">
+        <div className="lg:flex flex-col gap-3 w-[20%] hidden">
           <h1 className="text-[#191C1F] text-[16px] font-[500] leading-[24px]">
             Category
           </h1>
@@ -145,8 +145,8 @@ const ProductPage = () => {
             <div className="border border-[#E4E7E9]"></div>
           </div>
         </div>
-        <div className="w-[80%] flex flex-col gap-3">
-          <div className="flex items-center justify-between">
+        <div className="lg:w-[80%] flex flex-col gap-3 w-[100%]">
+          <div className="lg:flex items-center justify-between hidden">
             <div className="flex items-center">
               <input
                 className="w-[300px] outline-none h-[40px] rounded-[5px] border-[0.5px] border-[#37474F80] pl-[10px] pr-[30px]"
@@ -166,7 +166,7 @@ const ProductPage = () => {
               </div>
             </div>
           </div>
-          <div className="h-[44px] bg-[#F2F4F5] rounded-[4px] py-[12px] px-[24px] flex justify-between items-center">
+          <div className="h-[44px] bg-[#F2F4F5] rounded-[4px] py-[12px] px-[24px] lg:flex justify-between items-center hidden">
             <div className="flex items-center gap-1 text-[#191C1F] font-[400] text-[14px] leading-[20px]">
               <p className="text-[#5F6C72]">Active Filters:</p>
               <p>Bandages X</p>
@@ -183,8 +183,8 @@ const ProductPage = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="flex items-center gap-5">
-              <div className="bg-[#FFFFFF] border border-[#E4E7E9] h-[290px] w-[280px] p-[15px] flex flex-col gap-4">
+            <div className="lg:flex grid grid-cols-2 lg:flex-row items-center gap-5">
+              <div className="bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] flex flex-col gap-4">
                 <img src={picOne} alt={picOne} />
                 <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
                   <div className="flex items-center gap-1 text-[#77878F] leading-[16px] text-[12px] font-[400]">
@@ -195,7 +195,7 @@ const ProductPage = () => {
                   <p className="text-[#929FA5]">#500</p>
                 </div>
               </div>
-              <div className="bg-[#FFFFFF] border border-[#E4E7E9] h-[290px] w-[280px] p-[15px] flex flex-col gap-4">
+              <div className="bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] flex flex-col gap-4">
                 <img src={img2} alt={img2} />
                 <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
                   <div className="flex items-center gap-1 text-[#77878F] leading-[16px] text-[12px] font-[400]">
@@ -206,7 +206,7 @@ const ProductPage = () => {
                   <p className="text-[#929FA5]">#4000</p>
                 </div>
               </div>
-              <div className="bg-[#FFFFFF] border border-[#E4E7E9] h-[290px] w-[280px] p-[15px] flex flex-col gap-4">
+              <div className="bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] flex flex-col gap-4">
                 <img src={picTwo} alt={picTwo} />
                 <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
                   <div className="flex items-center gap-1 text-[#77878F] leading-[16px] text-[12px] font-[400]">
@@ -217,7 +217,7 @@ const ProductPage = () => {
                   <p className="text-[#929FA5]">#3000</p>
                 </div>
               </div>
-              <div className="bg-[#FFFFFF] border border-[#E4E7E9] h-[290px] w-[280px] p-[15px] flex flex-col gap-4">
+              <div className="bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] flex flex-col gap-4">
                 <img src={picThree} alt={picThree} />
                 <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
                   <div className="flex items-center gap-1 text-[#77878F] leading-[16px] text-[12px] font-[400]">
@@ -229,7 +229,7 @@ const ProductPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-5">
+            <div className="lg:flex items-center gap-5 hidden">
               <div className="bg-[#FFFFFF] border border-[#E4E7E9] h-[290px] w-[280px] p-[15px] flex flex-col gap-4">
                 <img src={pic} alt={pic} />
                 <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
@@ -281,7 +281,7 @@ const ProductPage = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mt-[5rem] text-[#1B6392] font-[700] text-[17px] leading-[20px]">
+          <div className="flex justify-center mt-5 text-[#1B6392] font-[700] text-[17px] leading-[20px]">
             <div className="flex items-center gap-2">
               <p>Browse All Products</p>
               <img src={arowIcon} alt={arowIcon} />
