@@ -3,7 +3,7 @@ import arrowIcon from "../../assets/ArrowRight.svg";
 
 const NewsLetter = () => {
   return (
-    <div className="bg-[#1B6392] h-[324px] flex justify-center">
+    <div style={{ fontFamily: "Public Sans" }} className="bg-[#1B6392] h-[324px] flex justify-center">
       <div className="flex items-center">
         <div className="flex flex-col gap-3 items-center">
           <h1 className="text-[32px] font-[600] text-[#ffff]">

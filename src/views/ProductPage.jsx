@@ -24,7 +24,10 @@ const ProductPage = () => {
       <NavBar />
       <div className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10"></div>
 
-      <div className="h-[1020px] px-[5rem] flex gap-6 py-[40px]">
+      <div
+        style={{ fontFamily: "Public Sans" }}
+        className="h-[1020px] px-[5rem] flex gap-6 py-[40px]"
+      >
         <div className="flex flex-col gap-3 w-[20%]">
           <h1 className="text-[#191C1F] text-[16px] font-[500] leading-[24px]">
             Category

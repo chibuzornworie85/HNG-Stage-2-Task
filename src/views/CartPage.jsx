@@ -16,7 +16,10 @@ const CartPage = () => {
   return (
     <div>
       <NavBar />
-      <div className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10 px-[9rem]">
+      <div
+        style={{ fontFamily: "Public Sans" }}
+        className="bg-[rgb(249,250,250)] py-[20px] sticky top-[90px] z-10 px-[9rem]"
+      >
         <div className="flex items-center gap-2 font-[500] text-[14px] leading-[20px]">
           <img src={houseIcon} alt={houseIcon} />
           <h1 className="text-[#5F6C72]">Home</h1>
@@ -25,7 +28,10 @@ const CartPage = () => {
         </div>
       </div>
 
-      <div className="px-[9rem] h-[1001px] py-[80px] flex justify-between gap-12">
+      <div
+        style={{ fontFamily: "Public Sans" }}
+        className="px-[9rem] h-[800px] py-[80px] flex justify-between gap-12"
+      >
         <div className="h-[350px] w-[650px] bg-[#FFFFFF] border border-[#E4E7E9] rounded-[4px]">
           <div className="h-[64px] py-[20px] px-[24px] text-[#191C1F] leading-[24px] font-[500] text-[18px]">
             <h1>Shopping Cart</h1>

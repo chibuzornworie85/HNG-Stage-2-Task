@@ -8,7 +8,10 @@ const Footer = () => {
   return (
     <div className="bg-[#37474F] pt-[40px]">
       <div className="flex justify-between px-[5rem] h-[300px]">
-        <div className="flex flex-col gap-[28px] text-[#F9FAFA]">
+        <div
+          style={{ fontFamily: "Noto Sans" }}
+          className="flex flex-col gap-[28px] text-[#F9FAFA]"
+        >
           <div className="flex items-center font-[700] text-[32px] leading-[43.58px]">
             <img src={logoIcon} alt={logoIcon} />
             <h1>Shoppu</h1>
@@ -38,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-[10rem]">
+        <div style={{ fontFamily: "Public Sans" }} className="flex gap-[10rem]">
           <div className="flex flex-col gap-[20px]">
             <h1 className="text-[#FFFFFF] font-[500] text-[16px] leading-[24px]">
               Top Category
@@ -104,7 +107,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center text-[#FFFFFF] font-[400] leading-[20px] pb-[20px]">
+      <div
+        style={{ fontFamily: "Noto Sans" }}
+        className="flex justify-center text-[#FFFFFF] font-[400] leading-[20px] pb-[20px]"
+      >
         <p>Shoppu © 2024</p>
       </div>
     </div>

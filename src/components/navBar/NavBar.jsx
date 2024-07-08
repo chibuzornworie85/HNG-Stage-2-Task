@@ -10,7 +10,10 @@ const NavBar = () => {
   return (
     <div className="bg_shadow bg-[#FFFFFF] h-[100px] flex justify-between items-center px-[5rem] sticky top-0 z-10">
       <div className="flex items-center gap-[10rem]">
-        <div className="flex items-center text-[#37474F] font-[700] text-[32px] leading-[43.58px]">
+        <div
+          style={{ fontFamily: "Noto Sans" }}
+          className="flex items-center text-[#37474F] font-[700] text-[32px] leading-[43.58px]"
+        >
           <img src={logoIcon} alt={logoIcon} />
           <h1>Shoppu</h1>
         </div>
