@@ -100,7 +100,7 @@ const CartPage = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <div className="w-[351px] h-[344px] bg-[#FFFFFF] rounded-[4px] border border-[#E4E7E9] relative bottom-10 -mb-10">
+          <div className="lg:w-[351px] w-[100%] h-[344px] bg-[#FFFFFF] rounded-[4px] border border-[#E4E7E9] relative bottom-10 -mb-10">
             <div className="p-[10px] flex flex-col gap-3">
               <h1 className="text-[#191C1F] font-[500] text-[18px] leading-[24px]">
                 Card Totals

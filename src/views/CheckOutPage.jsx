@@ -60,7 +60,10 @@ const CheckOutPage = () => {
               <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                 Address
               </p>
-              <input className="outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px] w-[100%]" placeholder="Address" />
+              <input
+                className="outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px] w-[100%]"
+                placeholder="Address"
+              />
             </div>
             <div className="flex justify-between gap-3 w-[100%]">
               <div className="flex flex-col w-[100%]">
@@ -99,7 +102,10 @@ const CheckOutPage = () => {
                 <p className="text-[#191C1F] leading-[20px] text-[14px] font-[400]">
                   Zip Code
                 </p>
-                <input className="w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]" />
+                <input
+                  className="w-[100%] outline-none border border-[#E4E7E9] h-[44px] rounded-[2px] pl-[10px]"
+                  placeholder="Zip Code"
+                />
               </div>
             </div>
             <div className="w-[100%] flex gap-2">
@@ -123,16 +129,16 @@ const CheckOutPage = () => {
               </p>
             </div>
 
-            <div className="h-[520px] flex flex-col gap-5 bg-[#FFFFFF] border border-[#E4E7E9] rounded-[4px] mt-[40px] p-[20px]">
+            <div className="h-[520px] flex flex-col gap-5 bg-[#FFFFFF] border border-[#E4E7E9] rounded-[4px] mt-[40px] p-[10px] lg:p-[20px]">
               <h1 className="text-[#191C1F] font-[500] leading-[24px] text-[18px]">
                 Payment Option
               </h1>
               <div className="h-[144px] bg-[#FFFFFF] border border-[#E4E7E9] flex items-center">
-                <div className="h-[96px] w-[160px] flex flex-col gap-3 items-center">
+                <div className="h-[96px] w-[25%] lg:w-[160px] flex flex-col gap-2 lg:gap-3 items-center">
                   <div>
                     <img src={CurrencyDollar} alt={CurrencyDollar} />
                   </div>
-                  <p className="text-[#191C1F] font-[500] text-[15px] leading-[20px]">
+                  <p className="text-[#191C1F] font-[500] text-[9px] text-center lg:text-[15px] leading-[20px]">
                     Cash on Delivery
                   </p>
                   <div>
@@ -140,11 +146,11 @@ const CheckOutPage = () => {
                   </div>
                 </div>
                 <div className=" border-r border-r-[#E4E7E9] h-[110px]"></div>
-                <div className="h-[96px] w-[160px] flex flex-col gap-3 items-center">
+                <div className="h-[96px] w-[25%] lg:w-[160px] flex flex-col gap-2 lg:gap-3 items-center">
                   <div>
                     <img src={paypalIcon} alt={paypalIcon} />
                   </div>
-                  <p className="text-[#191C1F] font-[500] text-[15px] leading-[20px]">
+                  <p className="text-[#191C1F] font-[500] text-[9px] text-center lg:text-[15px] leading-[20px]">
                     Paypal
                   </p>
                   <div>
@@ -152,11 +158,11 @@ const CheckOutPage = () => {
                   </div>
                 </div>
                 <div className=" border-r border-r-[#E4E7E9] h-[110px]"></div>
-                <div className="h-[96px] w-[160px] flex flex-col gap-3 items-center">
+                <div className="h-[96px] w-[25%] lg:w-[160px] flex flex-col gap-2 lg:gap-3 items-center">
                   <div>
                     <img src={amazonIcon} alt={amazonIcon} />
                   </div>
-                  <p className="text-[#191C1F] font-[500] text-[15px] leading-[20px]">
+                  <p className="text-[#191C1F] font-[500] text-[9px] text-center lg:text-[15px] leading-[20px]">
                     Amazon Pay
                   </p>
                   <div>
@@ -164,11 +170,11 @@ const CheckOutPage = () => {
                   </div>
                 </div>
                 <div className=" border-r border-r-[#E4E7E9] h-[110px]"></div>
-                <div className="h-[96px] w-[160px] flex flex-col gap-3 items-center">
+                <div className="h-[96px] w-[25%] lg:w-[160px] flex flex-col gap-2 lg:gap-3 items-center">
                   <div>
                     <img src={CreditCarIcon} alt={CreditCarIcon} />
                   </div>
-                  <p className="text-[#191C1F] font-[500] text-[15px] leading-[20px]">
+                  <p className="text-[#191C1F] font-[500] text-[9px] text-center lg:text-[15px] leading-[20px]">
                     Debid/Credit Card
                   </p>
                   <div>

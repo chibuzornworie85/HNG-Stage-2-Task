@@ -17,6 +17,7 @@ import img1 from "../assets/test2.svg";
 import img2 from "../assets/test3.svg";
 import buttonImg from "../assets/Button.svg";
 import arowIcon from "../assets/last.svg";
+import filterIcon from "../assets/filter.svg";
 
 const ProductPage = () => {
   return (
@@ -146,6 +147,9 @@ const ProductPage = () => {
           </div>
         </div>
         <div className="lg:w-[80%] flex flex-col gap-3 w-[100%]">
+          <div className="lg:hidden flex relative bottom-3">
+            <img src={filterIcon} alt={filterIcon} />
+          </div>
           <div className="lg:flex items-center justify-between hidden">
             <div className="flex items-center">
               <input
@@ -184,8 +188,29 @@ const ProductPage = () => {
 
           <div className="flex flex-col gap-5">
             <div className="lg:flex grid grid-cols-2 lg:flex-row items-center gap-5">
-              <div className="bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] flex flex-col gap-4">
-                <img src={picOne} alt={picOne} />
+              <div className="bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] hidden lg:flex flex-col gap-4">
+                <img src={picOne} alt={picOne} className="hidden lg:flex" />
+                <div className="bg-[url('/src/assets/Image.svg')] lg:hidden h-[110px] bg-no-repeat bg-cover bg-center flex justify-center items-center">
+                  <div>
+                    <img src={buttonImg} alt={buttonImg} className="h-[48px]" />
+                  </div>
+                </div>
+                <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
+                  <div className="flex items-center gap-1 text-[#77878F] leading-[16px] text-[12px] font-[400]">
+                    <img src={StartFullIcon} alt={StartFullIcon} />
+                    <p>(738)</p>
+                  </div>
+                  <h1>Adhesive Bandages (Plasters)</h1>
+                  <p className="text-[#929FA5]">#500</p>
+                </div>
+              </div>
+              <div className="test_shadow bg-[#FFFFFF] border border-[#E4E7E9] lg:h-[290px] lg:w-[280px] p-[15px] lg:hidden flex flex-col gap-4">
+                <img src={picOne} alt={picOne} className="hidden lg:flex" />
+                <div className="bg-[url('/src/assets/Image.svg')] lg:hidden h-[105px] bg-no-repeat bg-cover bg-center flex justify-center items-center">
+                  <div>
+                    <img src={buttonImg} alt={buttonImg} className="h-[40px]" />
+                  </div>
+                </div>
                 <div className="text-[#191C1F] text-[14px] font-[400] leading-[20px] flex flex-col gap-1">
                   <div className="flex items-center gap-1 text-[#77878F] leading-[16px] text-[12px] font-[400]">
                     <img src={StartFullIcon} alt={StartFullIcon} />
